@@ -1,4 +1,6 @@
-﻿namespace MyApp.Game;
+﻿using System;
+
+namespace MyApp.Game;
 
 public class Game
 {
