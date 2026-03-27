@@ -12,6 +12,16 @@ public class Enemy
         m_position = position;
     }
 
+    public Vector3 GetPosition()
+    {
+        return m_position; 
+    }
+
+    public EnemyType GetEnemyType()
+    {
+        return m_enemyType;
+    }
+
     public void FeedHitPoints(int hitPoints)
     {
         m_hitPoints = hitPoints;

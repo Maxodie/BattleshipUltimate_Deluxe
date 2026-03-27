@@ -10,11 +10,17 @@
         m_map = LoadMap(id);
         return false;
     }
+    
+    private Cell[,,] LoadMap(Guid id)
+    {
+        return new Cell[m_map.GetLength(0), m_map.GetLength(1), m_map.GetLength(2)];
+    }
 
     public void CreateMap(int mapSize, List<EnemyInfo> enemyInfos)
     {
         List<Enemy> enemies = FeedEnemyInfo(enemyInfos);
         m_map = new Cell[mapSize, mapSize, mapSize];
+        PositionEnemies(m_map, enemies);
     }
 
     private List<Enemy> FeedEnemyInfo(List<EnemyInfo> enemyInfos)
@@ -36,11 +42,88 @@
 
     private void PositionEnemies(Cell[,,] map, List<Enemy> enemies)
     {
+        Vector3 currentPosition;
+        Vector3 forward = Vector3.Zero();
+        EnemyType enemyType = EnemyType.None;
+        
+        foreach (Enemy enemy in enemies)
+        {
+            enemyType = enemy.GetEnemyType();
+            currentPosition = enemy.GetPosition();
+            
+            if (enemyType != EnemyType.Cube)
+            {
+                forward = RandomForward();
+            }
+
+            switch (enemyType)
+            {
+                case EnemyType.Segment:
+                    PositionSegment();
+                    break;
+                case EnemyType.Square:
+                    PositionSquare();
+                    break;
+                case EnemyType.Cube:
+                    PositionCube();
+                    break;
+                case EnemyType.None:
+                    //get rekt nerd, you don't even exist lmao
+                    break;
+            }
+        }
+    }
+
+    private void PositionSegment()
+    {
         
     }
 
-    private Cell[,,] LoadMap(Guid id)
+    private void PositionSquare()
     {
-        return new Cell[,,];
+        
+    }
+    
+    private void PositionCube()
+    {
+        
+    }
+    
+    private Vector3 RandomForward()
+    {
+        int coin = m_random.Next(0, 3);
+
+        switch (coin)
+        {
+            case 0:
+                return new Vector3(1, 0, 0);
+            case 1:
+                return new Vector3(0, 1, 0);
+            case 2:
+                return new Vector3(0, 0, 1);
+            default:
+                return new Vector3(0, 0, 1);
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
