@@ -31,5 +31,10 @@ namespace BattleshipUltimate_Deluxe
                 Log.Error("Cannot close null connection");
             }
         }
+
+        void RequestCommand()
+        {
+
+        }
     }
 }

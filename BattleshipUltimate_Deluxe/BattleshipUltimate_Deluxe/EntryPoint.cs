@@ -7,7 +7,7 @@
             Application app = new();
             app.Init();
             app.Run();
-            app.Run();
+            app.Shutdown();
         }
     }
 }
