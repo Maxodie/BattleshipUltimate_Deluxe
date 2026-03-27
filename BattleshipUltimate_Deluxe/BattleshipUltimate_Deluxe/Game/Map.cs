@@ -14,14 +14,16 @@ public class Map
         return false;
     }
 
-    public void CreateMap(int mapSize) 
+    public void CreateMap(int mapSize, List<EnemyInfo> enemyInfos)
     {
+        List<Enemy> enemies = FeedEnemyInfo();
         m_map = new Cell[mapSize];
+        
     }
 
-    private void FeedEnemyInfo()
+    private List<Enemy> FeedEnemyInfo(List<EnemyInfo> enemyInfos)
     {
-        
+        return new List<Enemy>();
     }
 
     private Cell[] LoadMap(Guid id)
