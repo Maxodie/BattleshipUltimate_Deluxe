@@ -1,6 +1,4 @@
-﻿using MySqlConnector;
-
-namespace BattleshipUltimate_Deluxe
+﻿namespace BattleshipUltimate_Deluxe
 {
     public class Log
     {

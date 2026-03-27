@@ -32,18 +32,35 @@ namespace BattleshipUltimate_Deluxe
             }
         }
 
-        MySqlDataReader RequestDataReader(string request)
+        
+        public object[][] SQLQuery(string query)
         {
-            try
+            MySqlCommand cmd = new(query);
+            var reader = cmd.ExecuteReader();
+
+            List<object[]> objects = new List<object[]>();
+
+            while (reader.Read())
             {
-                MySqlCommand cmd = new MySqlCommand(request);
-                return (MySqlDataReader)cmd.ExecuteReader();
+                int _len = reader.FieldCount;
+                object[] _result = new object[_len];
+
+                for (int _i = 0; _i < _len; _i++)
+                {
+                    _result[_i] = reader[_i];
+                }
+
+                objects.Add(_result );
             }
-            catch(Exception ex)
-            {
-                Log.Error($"Error failed to request : {ex}");
-                return null;
-            }
+
+            reader.Close();
+            return objects.ToArray();
+        }
+
+        public void SQLWriter(string request)
+        {
+            MySqlCommand command = new(request);
+            command.ExecuteNonQuery();
         }
     }
 }
