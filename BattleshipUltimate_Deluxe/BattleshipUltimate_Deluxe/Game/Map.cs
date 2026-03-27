@@ -21,7 +21,7 @@ public class Map
 
     private void FeedEnemyInfo()
     {
-        Console.WriteLine("Creating map... SASHA EST SIONISTE");
+        
     }
 
     private Cell[] LoadMap(Guid id)
