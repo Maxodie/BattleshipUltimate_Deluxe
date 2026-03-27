@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\work\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj": {}
+    "D:\\Content\\CNAM_ENJMIN\\L3P4\\DataBase\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj": {}
   },
   "projects": {
-    "F:\\work\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj": {
+    "D:\\Content\\CNAM_ENJMIN\\L3P4\\DataBase\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\work\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj",
+        "projectUniqueName": "D:\\Content\\CNAM_ENJMIN\\L3P4\\DataBase\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj",
         "projectName": "BattleshipUltimate_Deluxe",
-        "projectPath": "F:\\work\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj",
-        "packagesPath": "C:\\Users\\rodie\\.nuget\\packages\\",
-        "outputPath": "F:\\work\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\obj\\",
+        "projectPath": "D:\\Content\\CNAM_ENJMIN\\L3P4\\DataBase\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe.csproj",
+        "packagesPath": "C:\\Users\\maxod\\.nuget\\packages\\",
+        "outputPath": "D:\\Content\\CNAM_ENJMIN\\L3P4\\DataBase\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\BattleshipUltimate_Deluxe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
