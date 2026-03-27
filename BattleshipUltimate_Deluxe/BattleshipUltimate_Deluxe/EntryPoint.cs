@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Log.Success("Hello World!");
+            Application app = new();
+            app.Init();
+            app.Run();
+            app.Run();
         }
     }
 }

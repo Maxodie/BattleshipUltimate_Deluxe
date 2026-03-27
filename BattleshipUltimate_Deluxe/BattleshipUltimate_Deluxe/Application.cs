@@ -12,7 +12,6 @@
         {
             while(m_isRunning)
             {
-
             }
 
             Stop();
