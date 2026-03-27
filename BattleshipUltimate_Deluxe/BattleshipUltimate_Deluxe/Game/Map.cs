@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Diagnostics;
 
 namespace MyApp.Game;
 
@@ -16,7 +16,7 @@ public class Map
 
     public void CreateMap()
     {
-        
+        Console.WriteLine("Creating map... SASHA EST SIONISTE");
     }
 
     private Cell[] LoadMap(Guid id)
