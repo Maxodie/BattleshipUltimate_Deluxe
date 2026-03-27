@@ -15,7 +15,7 @@ namespace BattleshipUltimate_Deluxe
             }
             catch (Exception ex)
             {
-                Log.Error("Failed to open connection");
+                Log.Error($"Failed to open connection {ex.Message}");
                 return;
             }
         }
