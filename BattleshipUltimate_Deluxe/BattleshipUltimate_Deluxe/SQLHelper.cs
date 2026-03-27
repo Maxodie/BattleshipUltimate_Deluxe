@@ -15,7 +15,20 @@ namespace BattleshipUltimate_Deluxe
             }
             catch (Exception ex)
             {
+                Log.Error("Failed to open connection");
                 return;
+            }
+        }
+
+        public void CloseConnection()
+        {
+            if(m_connection != null)
+            {
+                m_connection.Close();
+            }
+            else
+            {
+                Log.Error("Cannot close null connection");
             }
         }
     }
