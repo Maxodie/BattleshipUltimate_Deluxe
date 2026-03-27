@@ -19,7 +19,6 @@ public class Map
 
     private Cell[] LoadMap(Guid id)
     {
-        //do the thing so the client is like doing its thing
         return new Cell[m_map.Length];
     }
 }
