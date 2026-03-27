@@ -59,13 +59,13 @@
             switch (enemyType)
             {
                 case EnemyType.Segment:
-                    PositionSegment();
+                    PositionSegment(forward, map, enemy);
                     break;
                 case EnemyType.Square:
-                    PositionSquare();
+                    PositionSquare(forward, map, enemy);
                     break;
                 case EnemyType.Cube:
-                    PositionCube();
+                    PositionCube(forward, map, enemy);
                     break;
                 case EnemyType.None:
                     //get rekt nerd, you don't even exist lmao
@@ -74,17 +74,17 @@
         }
     }
 
-    private void PositionSegment()
+    private void PositionSegment(Vector3 forward, Cell[,,] map, Enemy enemy)
     {
         
     }
 
-    private void PositionSquare()
-    {
+    private void PositionSquare(Vector3 forward, Cell[,,] map, Enemy enemy)
+    { 
         
     }
     
-    private void PositionCube()
+    private void PositionCube(Vector3 forward, Cell[,,] map, Enemy enemy)
     {
         
     }
@@ -106,24 +106,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
