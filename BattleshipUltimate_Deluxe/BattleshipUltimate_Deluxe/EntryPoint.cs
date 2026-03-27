@@ -1,10 +1,10 @@
-﻿namespace MyApp
+﻿namespace BattleshipUltimate_Deluxe
 {
-    internal class BattleshipUltimate_Deluxe
+    internal class EntryPoint
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Log.Success("Hello World!");
         }
     }
 }
