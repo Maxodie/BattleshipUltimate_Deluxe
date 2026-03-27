@@ -14,7 +14,12 @@ public class Map
         return false;
     }
 
-    public void CreateMap()
+    public void CreateMap(int mapSize) 
+    {
+        m_map = new Cell[mapSize];
+    }
+
+    private void FeedEnemyInfo()
     {
         Console.WriteLine("Creating map... SASHA EST SIONISTE");
     }
