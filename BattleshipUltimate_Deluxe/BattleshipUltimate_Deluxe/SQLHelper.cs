@@ -32,9 +32,18 @@ namespace BattleshipUltimate_Deluxe
             }
         }
 
-        void RequestCommand()
+        string RequestDataReader(string request)
         {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(request);
+                MySqlDataReader rdr = (MySqlDataReader)cmd.ExecuteReader();
+                rdr.Close();
+            }
+            catch(Exception ex)
+            {
 
+            }
         }
     }
 }
