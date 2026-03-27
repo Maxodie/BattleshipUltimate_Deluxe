@@ -8,7 +8,6 @@ public class Map
     
     public bool MapExistsInDataBase(Guid id)
     {
-        //something something check id in db or something 
         m_map = LoadMap(id);
         return false;
     }
