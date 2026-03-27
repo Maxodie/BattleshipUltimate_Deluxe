@@ -33,7 +33,7 @@ namespace BattleshipUltimate_Deluxe
         }
 
         
-        public object[][] SQLQuery(string query)
+        public object[][] SQLQuery(string query) 
         {
             MySqlCommand cmd = new(query);
             var reader = cmd.ExecuteReader();
