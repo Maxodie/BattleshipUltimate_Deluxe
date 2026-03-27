@@ -31,8 +31,8 @@
         {
             Vector3 position = new Vector3();
             position.X = m_random.Next(0, m_map.GetLength(0));
-            position.X = m_random.Next(0, m_map.GetLength(1));
-            position.X = m_random.Next(0, m_map.GetLength(2));
+            position.Y = m_random.Next(0, m_map.GetLength(1));
+            position.Z = m_random.Next(0, m_map.GetLength(2));
             
             enemies.Add(new Enemy(info.EnemyType, position));    
         }
