@@ -9,4 +9,10 @@ public class Cell
     {
         return m_enemyInCell;
     }
+
+    public void Hit()
+    {
+        m_enemy?.Hit();
+        m_enemyInCell = false;
+    }
 }
