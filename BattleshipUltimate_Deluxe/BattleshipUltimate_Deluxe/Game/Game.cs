@@ -2,7 +2,7 @@
 
 public class Game
 {
-    private int m_currentPlayerId = int.MinValue;
+    private Guid m_currentPlayerId;
     
     public void InitiateGame()
     {

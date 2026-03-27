@@ -4,11 +4,6 @@
     {
         static void Main(string[] args)
         {
-<<<<<<< Updated upstream
-            Log.Success("Hello World!");
-=======
-            
->>>>>>> Stashed changes
         }
     }
 }
