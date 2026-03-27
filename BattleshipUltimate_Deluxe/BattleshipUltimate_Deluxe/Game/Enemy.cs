@@ -4,7 +4,13 @@ public class Enemy
     private bool m_isDead;
 
     private EnemyType m_enemyType = EnemyType.None;
-    private Vector2 m_position = Vector2.Zero();
+    private Vector3 m_position = Vector3.Zero();
+
+    public Enemy(EnemyType type, Vector3 position)
+    {
+        m_enemyType = type;
+        m_position = position;
+    }
 
     public void FeedHitPoints(int hitPoints)
     {
