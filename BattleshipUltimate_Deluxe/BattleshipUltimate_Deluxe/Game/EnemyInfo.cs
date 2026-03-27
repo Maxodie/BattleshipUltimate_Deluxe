@@ -1,5 +1,3 @@
-namespace MyApp.Game;
-
 public class EnemyInfo
 {
     public EnemyInfo(EnemyType enemyType, int size, int amount)

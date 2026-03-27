@@ -1,6 +1,3 @@
-namespace MyApp.Game;
-using BattleshipUltimate_Deluxe.Tools;
-
 public class Enemy
 {
     private int m_hitPoints;

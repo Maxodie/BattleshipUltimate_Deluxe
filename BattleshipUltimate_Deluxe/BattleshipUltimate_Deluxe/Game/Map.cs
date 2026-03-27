@@ -1,7 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace MyApp.Game;
-
+﻿
 public class Map
 {
     private Guid m_currentMapId;
@@ -16,13 +13,14 @@ public class Map
 
     public void CreateMap(int mapSize, List<EnemyInfo> enemyInfos)
     {
-        List<Enemy> enemies = FeedEnemyInfo();
+        List<Enemy> enemies = FeedEnemyInfo(enemyInfos);
         m_map = new Cell[mapSize];
         
     }
 
     private List<Enemy> FeedEnemyInfo(List<EnemyInfo> enemyInfos)
     {
+        
         return new List<Enemy>();
     }
 

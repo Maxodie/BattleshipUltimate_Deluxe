@@ -1,5 +1,3 @@
-namespace MyApp.Game;
-
 public class Cell
 {
     private bool m_enemyInCell = false;

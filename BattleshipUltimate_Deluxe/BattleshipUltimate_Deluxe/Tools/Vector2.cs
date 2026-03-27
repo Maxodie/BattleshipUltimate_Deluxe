@@ -1,5 +1,3 @@
-namespace BattleshipUltimate_Deluxe.Tools;
-
 public struct Vector2
 {
     public Vector2(int x, int y)
